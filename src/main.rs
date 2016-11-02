@@ -1,6 +1,6 @@
 extern crate se5problems;
 
-use se5problems::problem::{problem1};
+use se5problems::problem::{problem1, problem2};
 
 fn main() {
   let args = std::env::args();
@@ -10,6 +10,7 @@ fn main() {
   
   match running_problem {
     "1" => problem1::run_1(),
+    "2" => problem2::run_2(),
     _  => println!("Problem not found."),
   }
 }
